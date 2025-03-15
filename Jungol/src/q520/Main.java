@@ -14,7 +14,11 @@ public class Main {
 		num1 = 2008;
 		num2 = 1999;
 		
-		System.out.println(num1 + " - " + num2 + " = " + (num1 - num2));		
+		System.out.println(num1 + " - " + num2 + " = " + (num1 - num2));
+		
+//		System.out.println("55 - 10 = 45");
+//		System.out.println("2008 - 1999 = 9");
+
 /*		
 		int A = 55;
 		int B = 10;
@@ -30,8 +34,9 @@ public class Main {
 		
 		System.out.println(A + " - " + B " = " + min);
 */	
-		
-
 	}
 
 }
+// 두 개의 정수형 변수를 선언하고 값을 대입하여 아래와 같이 출력되는 프로그램을 작성하라.
+// 55 - 10 = 45
+// 2008 - 1999 = 9
