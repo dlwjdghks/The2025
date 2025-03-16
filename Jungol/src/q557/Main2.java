@@ -12,17 +12,20 @@ import java.util.Scanner;
 class Person {
 	private String name;
 	private String school;
+	private String ban;
 	private int grade;
 
-	public Person(String name, String school, int grade) {
+	public Person(String name, String school, String ban, int grade) {
 		this.name = name;
 		this.school = school;
+		this.ban = ban;
 		this.grade = grade;
 	}
 
 	public void print() {
 		System.out.println("Name : " + name);
 		System.out.println("School : " + school);
+		System.out.println("ban : " + ban);
 		System.out.println("Grade : " + grade);
 	}
 }
@@ -30,8 +33,10 @@ class Person {
 public class Main2 {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
+		
 		String name = sc.next();
 		String school = sc.next();
+		String ban = sc.next();
 		int grade = sc.nextInt();
 		sc.close();
 
@@ -39,7 +44,16 @@ public class Main2 {
 //		System.out.println("School : " + school);
 //		System.out.println("Grade : " + grade);
 		
-		Person p1 = new Person(name, school, grade);
+		Person p1 = new Person(name, school, ban, grade);
+		
+		name = sc.next();
+		school = sc.next();
+		ban = sc.next();
+		grade = sc.nextInt();
+		
+		Person p2 = new Person(name, school, ban, grade);
+		
 		p1.print();
+		p2.print();
 	}
 }
