@@ -39,10 +39,6 @@ public class Main2 {
 		String ban = sc.next();
 		int grade = sc.nextInt();
 		sc.close();
-
-//		System.out.println("Name : " + name);
-//		System.out.println("School : " + school);
-//		System.out.println("Grade : " + grade);
 		
 		Person p1 = new Person(name, school, ban, grade);
 		
@@ -50,8 +46,13 @@ public class Main2 {
 		school = sc.next();
 		ban = sc.next();
 		grade = sc.nextInt();
+		sc.close();
 		
 		Person p2 = new Person(name, school, ban, grade);
+		
+//		System.out.println("Name : " + name);
+//		System.out.println("School : " + school);
+//		System.out.println("Grade : " + grade);
 		
 		p1.print();
 		p2.print();
